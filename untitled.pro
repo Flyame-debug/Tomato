@@ -17,12 +17,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
+    mainmenu.cpp \
+    myqspinbox.cpp \
+    task.cpp \
+    taskcreate.cpp \
     widget.cpp
 
 HEADERS += \
+    mainmenu.h \
+    myqspinbox.h \
+    task.h \
+    taskcreate.h \
     widget.h
 
 FORMS += \
+    mainmenu.ui \
+    task.ui \
+    taskcreate.ui \
     widget.ui
 
 # Default rules for deployment.

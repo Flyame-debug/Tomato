@@ -97,7 +97,7 @@ font-size:14px;
      <string>Passwords</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Pushbottom">
     <property name="geometry">
      <rect>
       <x>100</x>
