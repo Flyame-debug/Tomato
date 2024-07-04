@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/pics">
-        <file>QQ图片20240704160825.png</file>
+    <qresource prefix="/">
+        <file>Tomatopic.png</file>
     </qresource>
 </RCC>
