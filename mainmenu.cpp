@@ -27,7 +27,9 @@ void MainMenu::on_start_clicked()
 //个人中心
 void MainMenu::on_center_clicked()
 {
-
+    this->close();
+    PersonalWidget *son=new PersonalWidget();
+    son->show();
 }
 //系统设置
 void MainMenu::on_settings_clicked()
