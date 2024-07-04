@@ -1,5 +1,5 @@
 #include "running.h"
-#include "ui_running.h"
+#include"ui_running.h"
 #include"conduct.h"
 #include"fail.h"
 
@@ -14,7 +14,9 @@
 #define RED_COLOR QColor(255, 0, 0)
 #define GREEN_COLOR QColor(0, 255, 0)
 
-Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
+running::running(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::running)
 {
     //setAttribute(Qt::WA_TranslucentBackground);
     //setWindowFlags(Qt::FramelessWindowHint | Qt::WindowMinMaxButtonsHint | Qt::WindowStaysOnTopHint);
@@ -37,26 +39,26 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     ui->Timer->setSegmentStyle(QLCDNumber::Filled);
 
     startbutton = ui->startButton;
-    connect(timer, &QTimer::timeout, this, &Widget::updateTime);
+    connect(timer, &QTimer::timeout, this, &running::updateTime);
     // 连接计时器超时信号与更新时间的槽函数
 
 
     InitTime();
 }
 
-Widget::~Widget()
+running::~running()
 {
     delete ui;
 }
 
-void Widget::mousePressEvent(QMouseEvent *e)
+void running::mousePressEvent(QMouseEvent *e)
 {
     if (e->button() == Qt::LeftButton)
         clickPos = e->pos();
 }
 
 // 实现窗口的拖动，父窗口的左上角+当前鼠标指针移动-初始单击时候鼠标指针的方向
-void Widget::mouseMoveEvent(QMouseEvent *e)
+void running::mouseMoveEvent(QMouseEvent *e)
 {
     if (e->buttons() & Qt::LeftButton)
         move(e->pos() + pos() - clickPos);
@@ -64,7 +66,7 @@ void Widget::mouseMoveEvent(QMouseEvent *e)
 }
 
 // 根据当前颜色填充整个窗口的背景色
-void Widget::paintEvent(QPaintEvent *)
+void running::paintEvent(QPaintEvent *)
 {
     QPainter painter(this);
     //painter.fillRect(rect(), current_color);
@@ -72,7 +74,7 @@ void Widget::paintEvent(QPaintEvent *)
 }
 
 // 更新倒计时显示
-void Widget::updateTime()
+void running::updateTime()
 {
     QString s_minute = QString::number(time.minute());
     QString s_second = QString::number(time.second());
@@ -116,7 +118,7 @@ void Widget::updateTime()
 }
 
 // 初始化计时时间
-void Widget::InitTime()
+void running::InitTime()
 {
     time.setHMS(0, 25, 0);
     current_color = RED_COLOR;
@@ -124,7 +126,7 @@ void Widget::InitTime()
 }
 
 // 开始/暂停按钮的点击事件
-void Widget::on_startButton_clicked()
+void running::on_startButton_clicked()
 {
     if (state)
     {
@@ -141,7 +143,7 @@ void Widget::on_startButton_clicked()
 }
 
 // 关闭按钮的点击事件
-void Widget::on_closeButton_clicked()
+void running::on_closeButton_clicked()
 {
 
 this->close();
