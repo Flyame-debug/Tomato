@@ -46,8 +46,21 @@
     <property name="text">
      <string/>
     </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>460</width>
+      <height>179</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
     <property name="pixmap">
-     <pixmap resource="pics.qrc">:/pics/QQ图片20240704160825.png</pixmap>
+     <pixmap resource="pics.qrc">:/Tomatopic.png</pixmap>
     </property>
    </widget>
   </widget>
