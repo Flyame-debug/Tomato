@@ -12,14 +12,17 @@ musicsellect::musicsellect(QWidget *parent) :
        startSound(new QMediaPlayer(this)),
        playlist(new QMediaPlaylist(this))
    {
-       playlist->clear();
-       playlist->setPlaybackMode(QMediaPlaylist::Loop); // 设置循环模式
-       startSound->setPlaylist(playlist);
-
-       ui = new Ui::musicsellect;
-       ui->setupUi(this);
-   }
-
+    playlist->setPlaybackMode(QMediaPlaylist::Loop); // 设置循环模式
+          startSound->setPlaylist(playlist);
+          playlist->addMedia(QUrl("qrc:/new/music/Andrew Prahlow - Echoes of the Eye.mp3"));
+          playlist->addMedia(QUrl("qrc:/new/music/Echoes of Nature - Showers.mp3"));
+          playlist->addMedia(QUrl("qrc:/new/music/moonlight.mp3"));
+          playlist->addMedia(QUrl("qrc:/new/music/Noble Music Project.mp3"));
+          playlist->addMedia(QUrl("qrc:/new/music/Peter Jeremias - Coming Home.mp3"));
+          playlist->addMedia(QUrl("qrc:/new/music/Peter Jeremias - Dusk.mp3"));
+          ui = new Ui::musicsellect;
+          ui->setupUi(this);
+      }
 musicsellect::~musicsellect()
 {
     delete ui;
@@ -36,9 +39,7 @@ void musicsellect::on_pushButton_3_clicked()
 void musicsellect::on_radioButton_3_toggled(bool checked)
 {
     if (checked){
-          playlist->clear(); // 清空播放列表
-          playlist->addMedia(QUrl("qrc:/new/music/Andrew Prahlow - Echoes of the Eye.mp3"));
-          playlist->setPlaybackMode(QMediaPlaylist::Loop);
+
           startSound->setPlaylist(playlist);
           startSound->play();
       }
