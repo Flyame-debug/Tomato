@@ -16,29 +16,40 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    conduct.cpp \
+    fail.cpp \
     main.cpp \
     mainmenu.cpp \
     myqspinbox.cpp \
     personalwidget.cpp \
     qcaculate.cpp \
+    running.cpp \
     task.cpp \
     taskcreate.cpp \
+    tomato.cpp \
     widget.cpp
 
 HEADERS += \
+    conduct.h \
+    fail.h \
     mainmenu.h \
     myqspinbox.h \
     personalwidget.h \
     qcaculate.h \
     task.h \
     taskcreate.h \
+    tomato.h \
     widget.h
 
 FORMS += \
+    conduct.ui \
+    fail.ui \
     mainmenu.ui \
     personalwidget.ui \
+    running.ui \
     task.ui \
     taskcreate.ui \
+    tomato.ui \
     widget.ui
 
 # Default rules for deployment.
@@ -47,4 +58,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
+    api.qrc \
+    api.qrc \
     api.qrc
+
+DISTFILES += \
+    qt.conf
