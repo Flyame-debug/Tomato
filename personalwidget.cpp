@@ -1,6 +1,6 @@
 #include "personalwidget.h"
 #include "ui_personalwidget.h"
-
+#include "mainmenu.h"
 
 PersonalWidget::PersonalWidget(QWidget *parent)
     : QWidget(parent)
@@ -75,3 +75,17 @@ PersonalWidget::~PersonalWidget()
     delete ui;
 }
 
+//返回
+void PersonalWidget::on_return_2_clicked()
+{
+    this->close();
+    MainMenu *father=new MainMenu();
+    father->show();
+}
+//主菜单
+void PersonalWidget::on_mainMenu_clicked()
+{
+    this->close();
+    MainMenu *father=new MainMenu();
+    father->show();
+}

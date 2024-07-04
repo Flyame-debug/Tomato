@@ -19,6 +19,7 @@ SOURCES += \
     main.cpp \
     mainmenu.cpp \
     myqspinbox.cpp \
+    personalwidget.cpp \
     task.cpp \
     taskcreate.cpp \
     widget.cpp
@@ -26,12 +27,14 @@ SOURCES += \
 HEADERS += \
     mainmenu.h \
     myqspinbox.h \
+    personalwidget.h \
     task.h \
     taskcreate.h \
     widget.h
 
 FORMS += \
     mainmenu.ui \
+    personalwidget.ui \
     task.ui \
     taskcreate.ui \
     widget.ui

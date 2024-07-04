@@ -15,7 +15,7 @@ task::~task()
 {
     delete ui;
 }
-//因为我的上一级菜单暂时不存在，故下面两个按钮功能等待后续实现
+
 //点击“返回”回到上一级菜单
 void task::on_btn_return_clicked()
 {

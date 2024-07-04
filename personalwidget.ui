@@ -19,7 +19,7 @@
   <property name="windowTitle">
    <string>番茄钟</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="return_2">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -32,7 +32,7 @@
     <string>back</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="mainMenu">
    <property name="geometry">
     <rect>
      <x>700</x>
@@ -101,7 +101,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>786</width>
+      <width>779</width>
       <height>800</height>
      </rect>
     </property>
