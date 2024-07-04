@@ -28,6 +28,10 @@
   <property name="windowTitle">
    <string>创建任务</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>clock.png</normaloff>clock.png</iconset>
+  </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
