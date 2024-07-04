@@ -15,15 +15,17 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
-protected:
+/*protected:
     void mouseMoveEvent(QMouseEvent *e);
-    void mousePressEvent(QMouseEvent *e);
+    void mousePressEvent(QMouseEvent *e);*/
 
 private slots:
     void on_toolButton_clicked();
     void on_toolButton_2_clicked();
 
     void on_toolMinimizedButton_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::Widget *ui;

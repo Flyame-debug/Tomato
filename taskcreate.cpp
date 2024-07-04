@@ -4,6 +4,8 @@
 #include "myqspinbox.h"
 #include "mainmenu.h"
 #include "qcaculate.h"
+//数据库尚未引入
+//#include
 
 taskCreate::taskCreate(QWidget *parent) :
     QWidget(parent),

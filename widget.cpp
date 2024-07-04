@@ -2,6 +2,7 @@
 #include "ui_widget.h"
 #include<QPainter>
 #include<QMouseEvent>
+#include "mainmenu.h"
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -9,8 +10,8 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    setWindowFlags(Qt::FramelessWindowHint|windowFlags());
-    setAttribute(Qt::WA_TranslucentBackground);
+    //setWindowFlags(Qt::FramelessWindowHint|windowFlags());
+    //setAttribute(Qt::WA_TranslucentBackground);
 
 }
 
@@ -22,7 +23,7 @@ Widget::~Widget()
 
 
 
-void Widget::mousePressEvent(QMouseEvent *e)
+/*void Widget::mousePressEvent(QMouseEvent *e)
 {
     if(e->button() == Qt::LeftButton)
     {
@@ -44,7 +45,7 @@ void Widget::mouseMoveEvent(QMouseEvent *e)
 void Widget::on_toolButton_clicked()
 {
     close();
-}
+}*/
 
 
 
@@ -56,4 +57,11 @@ void Widget::on_toolMinimizedButton_clicked()
 void Widget::on_toolButton_2_clicked()
 {
      showMinimized();
+}
+
+void Widget::on_pushButton_clicked()
+{
+    this->close();
+    MainMenu *son=new MainMenu;
+    son->show();
 }
