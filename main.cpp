@@ -2,7 +2,8 @@
 
 #include <QApplication>
 #include <QPushButton>
-
+#include <QMediaPlayer>
+#include<QtMultimedia/QMediaPlaylist>
 
 
 int main(int argc, char *argv[])

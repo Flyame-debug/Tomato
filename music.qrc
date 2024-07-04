@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/music">
+        <file>Noble Music Project.mp3</file>
+        <file>Peter Jeremias - Coming Home.mp3</file>
+        <file>Peter Jeremias - Dusk.mp3</file>
+        <file>Andrew Prahlow - Echoes of the Eye.mp3</file>
+        <file>Echoes of Nature - Showers.mp3</file>
+        <file>moonlight.mp3</file>
+    </qresource>
+</RCC>
