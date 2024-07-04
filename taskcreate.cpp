@@ -44,8 +44,8 @@ void taskCreate::on_cancel_clicked()
     task *father=new task();
     father->show();
 }
-
-void taskCreate::on_time_textChanged(const QString &arg1)
+//计算番茄数的东西
+/*void taskCreate::on_time_textChanged(const QString &arg1)
 {
     emit textChanged(const QString &arg1);
 }
@@ -53,5 +53,5 @@ void taskCreate::on_time_textChanged(const QString &arg1)
 void taskCreate::on_frequency_textChanged(const QString &arg1)
 {
     emit textChanged(const QString &arg1);
-}
+}*/
 
