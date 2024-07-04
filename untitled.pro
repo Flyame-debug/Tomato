@@ -57,6 +57,7 @@ FORMS += \
     taskcreate.ui \
     tomato.ui \
     widget.ui \
+    xitongsetting.ui \
     xitongsetting.ui
 
 # Default rules for deployment.
