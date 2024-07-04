@@ -18,18 +18,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    conduct.cpp \
+    fail.cpp \
     main.cpp \
     mainmenu.cpp \
     musicsellect.cpp \
     myqspinbox.cpp \
     personalwidget.cpp \
     qcaculate.cpp \
+    running.cpp \
     task.cpp \
     taskcreate.cpp \
+    tomato.cpp \
     widget.cpp \
     xitongsetting.cpp
 
 HEADERS += \
+    conduct.h \
+    fail.h \
     mainmenu.h \
     musicsellect.h \
     myqspinbox.h \
@@ -37,15 +43,19 @@ HEADERS += \
     qcaculate.h \
     task.h \
     taskcreate.h \
+    tomato.h \
     widget.h \
     xitongsetting.h
 
 FORMS += \
+    fail.ui \
     mainmenu.ui \
     musicsellect.ui \
     personalwidget.ui \
+    running.ui \
     task.ui \
     taskcreate.ui \
+    tomato.ui \
     widget.ui \
     xitongsetting.ui
 
@@ -56,5 +66,20 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     api.qrc \
+    api.qrc \
     music.qrc \
-    pics.qrc
+    music.qrc \
+    pics.qrc \
+    pics.qrc \
+    res.qrc
+
+DISTFILES += \
+    Andrew Prahlow - Echoes of the Eye.mp3 \
+    Echoes of Nature - Showers.mp3 \
+    Noble Music Project.mp3 \
+    Peter Jeremias - Coming Home.mp3 \
+    Peter Jeremias - Dusk.mp3 \
+    Tomatopic.png \
+    desktop.ini \
+    moonlight.mp3 \
+    qt.conf
