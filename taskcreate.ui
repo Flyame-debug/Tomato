@@ -33,56 +33,58 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>591</width>
-     <height>51</height>
+     <width>600</width>
+     <height>30</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="2">
-     <widget class="QPushButton" name="btn_mainMenu">
-      <property name="text">
-       <string>主菜单</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>372</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="0" column="0">
-     <widget class="QPushButton" name="btn_return">
-      <property name="text">
-       <string>返回</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <widget class="QPushButton" name="btn_mainMenu">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>0</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>主菜单</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_return">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QWidget" name="widget_2" native="true">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>50</y>
-     <width>521</width>
-     <height>31</height>
+     <x>0</x>
+     <y>40</y>
+     <width>600</width>
+     <height>40</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <widget class="QLineEdit" name="name">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>10</y>
-      <width>113</width>
-      <height>21</height>
+      <x>200</x>
+      <y>0</y>
+      <width>200</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="placeholderText">
@@ -116,6 +118,11 @@
        <width>71</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
      </property>
      <property name="text">
       <string>每次专注</string>
