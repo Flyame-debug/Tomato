@@ -30,10 +30,26 @@
     <rect>
      <x>70</x>
      <y>30</y>
-     <width>461</width>
-     <height>181</height>
+     <width>460</width>
+     <height>180</height>
     </rect>
    </property>
+   <widget class="QLabel" name="ImageTomato">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>460</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="pics.qrc">:/pics/QQ图片20240704160825.png</pixmap>
+    </property>
+   </widget>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
@@ -47,6 +63,12 @@
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QPushButton" name="start">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>120</height>
+       </size>
+      </property>
       <property name="text">
        <string>开始专注</string>
       </property>
@@ -66,6 +88,12 @@
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <widget class="QPushButton" name="center">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
       <property name="text">
        <string>个人中心</string>
       </property>
@@ -85,6 +113,12 @@
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
      <widget class="QPushButton" name="settings">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
       <property name="text">
        <string>系统设置</string>
       </property>
@@ -93,6 +127,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="pics.qrc"/>
+ </resources>
  <connections/>
 </ui>
