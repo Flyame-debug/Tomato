@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>clock.png</normaloff>clock.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">*{
 background:rgb(255, 255, 255);

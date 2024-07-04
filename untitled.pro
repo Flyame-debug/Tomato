@@ -67,19 +67,29 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     api.qrc \
     api.qrc \
+    api.qrc \
+    music.qrc \
     music.qrc \
     music.qrc \
     pics.qrc \
     pics.qrc \
+    pics.qrc \
+    res.qrc \
     res.qrc
 
 DISTFILES += \
     Andrew Prahlow - Echoes of the Eye.mp3 \
+    Andrew Prahlow - Echoes of the Eye.mp3 \
+    Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
     Noble Music Project.mp3 \
+    Noble Music Project.mp3 \
+    Peter Jeremias - Coming Home.mp3 \
     Peter Jeremias - Coming Home.mp3 \
     Peter Jeremias - Dusk.mp3 \
+    Peter Jeremias - Dusk.mp3 \
     Tomatopic.png \
+    clock.png \
     desktop.ini \
     moonlight.mp3 \
     qt.conf
