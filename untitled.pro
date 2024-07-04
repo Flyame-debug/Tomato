@@ -23,7 +23,8 @@ SOURCES += \
     qcaculate.cpp \
     task.cpp \
     taskcreate.cpp \
-    widget.cpp
+    widget.cpp \
+    xitongsetting.cpp
 
 HEADERS += \
     mainmenu.h \
@@ -32,14 +33,16 @@ HEADERS += \
     qcaculate.h \
     task.h \
     taskcreate.h \
-    widget.h
+    widget.h \
+    xitongsetting.h
 
 FORMS += \
     mainmenu.ui \
     personalwidget.ui \
     task.ui \
     taskcreate.ui \
-    widget.ui
+    widget.ui \
+    xitongsetting.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

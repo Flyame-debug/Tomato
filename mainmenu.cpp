@@ -4,6 +4,7 @@
 #include "task.h"
 #include "taskcreate.h"
 #include "personalwidget.h"
+#include "xitongsetting.h"
 
 MainMenu::MainMenu(QWidget *parent) :
     QWidget(parent),
@@ -34,5 +35,7 @@ void MainMenu::on_center_clicked()
 //系统设置
 void MainMenu::on_settings_clicked()
 {
-
+    this->close();
+    Xitongsetting *son=new Xitongsetting();
+    son->show();
 }
