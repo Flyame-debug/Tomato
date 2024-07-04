@@ -20,6 +20,7 @@ SOURCES += \
     mainmenu.cpp \
     myqspinbox.cpp \
     personalwidget.cpp \
+    qcaculate.cpp \
     task.cpp \
     taskcreate.cpp \
     widget.cpp
@@ -28,6 +29,7 @@ HEADERS += \
     mainmenu.h \
     myqspinbox.h \
     personalwidget.h \
+    qcaculate.h \
     task.h \
     taskcreate.h \
     widget.h

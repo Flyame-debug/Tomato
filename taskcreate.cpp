@@ -3,18 +3,21 @@
 #include "task.h"
 #include "myqspinbox.h"
 #include "mainmenu.h"
+#include "qcaculate.h"
 
 taskCreate::taskCreate(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::taskCreate)
 {
     ui->setupUi(this);
+
 }
 
 taskCreate::~taskCreate()
 {
     delete ui;
 }
+
 //返回上一级
 void taskCreate::on_btn_return_clicked()
 {
@@ -41,3 +44,14 @@ void taskCreate::on_cancel_clicked()
     task *father=new task();
     father->show();
 }
+
+void taskCreate::on_time_textChanged(const QString &arg1)
+{
+    emit textChanged(const QString &arg1);
+}
+
+void taskCreate::on_frequency_textChanged(const QString &arg1)
+{
+    emit textChanged(const QString &arg1);
+}
+

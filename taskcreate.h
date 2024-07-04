@@ -24,6 +24,13 @@ private slots:
 
     void on_cancel_clicked();
 
+    void on_time_textChanged(const QString &arg1);
+
+    void on_frequency_textChanged(const QString &arg1);
+
+signals:
+    void textChanged(const QString &arg1);
+
 private:
     Ui::taskCreate *ui;
 };
