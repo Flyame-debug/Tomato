@@ -1,8 +1,7 @@
 #include "musicsellect.h"
 #include "ui_musicsellect.h"
 #include "xitongsetting.h"
-#include <QMediaPlayer>
-#include<QtMultimedia/QMediaPlaylist>
+
 
 QMediaPlayer *startSound;  //创建一个音乐播放器
 QMediaPlaylist * playlist;//创建音乐清单
@@ -42,7 +41,10 @@ void musicsellect::on_radioButton_3_toggled(bool checked)
 
           startSound->setPlaylist(playlist);
           startSound->play();
-      }
+      }else{
+        startSound->setPlaylist(playlist);
+        startSound->stop();
+    }
 }
 
 

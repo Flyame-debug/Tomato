@@ -36,6 +36,8 @@ private:
     Ui::Xitongsetting *ui;
 
     musicsellect *musicsellect;
+    QMediaPlayer *startSound;
+    QMediaPlaylist *playlist;
 };
 
 #endif // XITONGSETTING_H
