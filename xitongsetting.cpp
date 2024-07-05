@@ -5,11 +5,15 @@
 #include <QApplication>
 #include <QWidget>
 #include <QPushButton>
+#include <QMediaPlayer>
+#include <QMediaPlaylist>
 
 
 Xitongsetting::Xitongsetting(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::Xitongsetting)
+    ui(new Ui::Xitongsetting),
+    startSound(new QMediaPlayer(this)),
+    playlist(new QMediaPlaylist(this))
 {
     ui->setupUi(this);
 }
@@ -50,13 +54,14 @@ void Xitongsetting::on_pushButton_3_clicked()
 
 void Xitongsetting::on_radioButton_2_toggled(bool checked)
 {
-    {
+
         if(checked){
            ui->pushButton_3->setEnabled(true);
         }
         else{
            ui->pushButton_3->setEnabled(false);
         }
-    }
+
 
 }
+
