@@ -10,8 +10,8 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    //setWindowFlags(Qt::FramelessWindowHint|windowFlags());
-    //setAttribute(Qt::WA_TranslucentBackground);
+    setWindowFlags(Qt::FramelessWindowHint|windowFlags());
+    setAttribute(Qt::WA_TranslucentBackground);
 
 }
 
@@ -41,11 +41,11 @@ void Widget::mouseMoveEvent(QMouseEvent *e)
     }
 
 }
-
+*/
 void Widget::on_toolButton_clicked()
 {
     close();
-}*/
+}
 
 
 

@@ -149,6 +149,9 @@ void running::on_closeButton_clicked()
 this->close();
       fail *son=new fail;
       son->show();
+
+
 }
+
 
 

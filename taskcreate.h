@@ -30,6 +30,7 @@ private slots:
 
 signals:
     void textChanged(const QString &arg1);
+    void mySignal(QString data);
 
 private:
     Ui::taskCreate *ui;

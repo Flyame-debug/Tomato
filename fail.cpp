@@ -1,6 +1,7 @@
 #include "fail.h"
 #include "ui_fail.h"
 #include"widget.h"
+#include"mainmenu.h"
 
 fail::fail(QWidget *parent) :
     QWidget(parent),
@@ -21,7 +22,10 @@ fail::~fail()
 
 void fail::on_toolButton_clicked()
 {
-    close();
+    this->close();
+    MainMenu *son=new MainMenu;
+    son->show();
+
 }
 
 void fail::on_toolButton_2_clicked()

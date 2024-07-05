@@ -3,6 +3,7 @@
 #include "ui_task.h"
 #include "taskcreate.h"
 #include "mainmenu.h"
+#include"running.h"
 
 task::task(QWidget *parent) :
     QWidget(parent),
@@ -38,3 +39,16 @@ void task::on_createTask_clicked()
     taskCreate *son = new taskCreate();
     son->show();
 }
+
+void task::on_tasklist_clicked()
+{
+    this->hide();
+    running *son =new running;
+    son->show();
+}
+
+/*void task::mySlot(QString data)
+{
+    ui->nameEdit->setText(data);
+}
+*/

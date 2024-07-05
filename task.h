@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "mainmenu.h"
+#include"taskcreate.h"
 namespace Ui {
 class task;
 }
@@ -22,6 +23,9 @@ private slots:
 
     void on_createTask_clicked();
 
+    void on_tasklist_clicked();
+
+    void mySlot(QString data);
 private:
     Ui::task *ui;
 };

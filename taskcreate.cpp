@@ -12,7 +12,8 @@ taskCreate::taskCreate(QWidget *parent) :
     ui(new Ui::taskCreate)
 {
     ui->setupUi(this);
-
+    //connect(ui->ok,task::mySignal(),this,task::mySlot())
+//ui->name.emit(mySignal(ui->nameEdit->text()));
 }
 
 taskCreate::~taskCreate()
@@ -37,6 +38,10 @@ void taskCreate::on_btn_mainMenu_clicked()
 //完成任务创建
 void taskCreate::on_ok_clicked()
 {
+this->hide();
+    task *son=new task;
+    son->show();
+
 
 }
 //取消任务创建
@@ -45,6 +50,7 @@ void taskCreate::on_cancel_clicked()
     this->close();
     task *father=new task();
     father->show();
+
 }
 //计算番茄数的东西
 /*void taskCreate::on_time_textChanged(const QString &arg1)

@@ -20,6 +20,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     conduct.cpp \
     fail.cpp \
+    login.cpp \
     main.cpp \
     mainmenu.cpp \
     musicsellect.cpp \
@@ -29,6 +30,7 @@ SOURCES += \
     running.cpp \
     task.cpp \
     taskcreate.cpp \
+    tasklist.cpp \
     tomato.cpp \
     widget.cpp \
     xitongsetting.cpp
@@ -36,11 +38,13 @@ SOURCES += \
 HEADERS += \
     conduct.h \
     fail.h \
+    login.h \
     mainmenu.h \
     musicsellect.h \
     myqspinbox.h \
     personalwidget.h \
     qcaculate.h \
+    running.h \
     task.h \
     taskcreate.h \
     tomato.h \
@@ -48,16 +52,19 @@ HEADERS += \
     xitongsetting.h
 
 FORMS += \
+    conduct.ui \
     fail.ui \
+    login.ui \
     mainmenu.ui \
     musicsellect.ui \
     personalwidget.ui \
     running.ui \
     task.ui \
     taskcreate.ui \
+    tasklist.ui \
+    tasklist.ui \
     tomato.ui \
     widget.ui \
-    xitongsetting.ui \
     xitongsetting.ui
 
 # Default rules for deployment.
@@ -69,28 +76,65 @@ RESOURCES += \
     api.qrc \
     api.qrc \
     api.qrc \
+    api.qrc \
+    api.qrc \
+    api.qrc \
     music.qrc \
     music.qrc \
     music.qrc \
+    music.qrc \
+    music.qrc \
+    music.qrc \
+    pics.qrc \
+    pics.qrc \
+    pics.qrc \
     pics.qrc \
     pics.qrc \
     pics.qrc \
     res.qrc \
+    res.qrc \
+    res.qrc \
+    res.qrc \
     res.qrc
 
 DISTFILES += \
+    .gitignore \
+    .gitignore \
     Andrew Prahlow - Echoes of the Eye.mp3 \
     Andrew Prahlow - Echoes of the Eye.mp3 \
+    Andrew Prahlow - Echoes of the Eye.mp3 \
+    Andrew Prahlow - Echoes of the Eye.mp3 \
+    Andrew Prahlow - Echoes of the Eye.mp3 \
+    Andrew Prahlow - Echoes of the Eye.mp3.lnk \
+    Andrew Prahlow - Echoes of the Eye.mp3.lnk \
+    Andrew Prahlow - Echoes of the Eye.mp3.lnk \
+    Echoes of Nature - Showers.mp3 \
+    Echoes of Nature - Showers.mp3 \
+    Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
     Noble Music Project.mp3 \
     Noble Music Project.mp3 \
+    Noble Music Project.mp3 \
+    Noble Music Project.mp3 \
+    Noble Music Project.mp3 \
     Peter Jeremias - Coming Home.mp3 \
     Peter Jeremias - Coming Home.mp3 \
+    Peter Jeremias - Coming Home.mp3 \
+    Peter Jeremias - Coming Home.mp3 \
+    Peter Jeremias - Coming Home.mp3 \
+    Peter Jeremias - Dusk.mp3 \
+    Peter Jeremias - Dusk.mp3 \
+    Peter Jeremias - Dusk.mp3 \
     Peter Jeremias - Dusk.mp3 \
     Peter Jeremias - Dusk.mp3 \
     Tomatopic.png \
     clock.png \
     desktop.ini \
     moonlight.mp3 \
-    qt.conf
+    qt.conf \
+    untitled.pro.user \
+    untitled.pro.user.036f259 \
+    untitled.pro.user.33a521e \
+    untitled.pro.user.9a5c0e8 \
+    untitled.pro.user.b38871d
