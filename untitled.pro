@@ -1,6 +1,8 @@
 QT       += core gui
 QT += multimedia
 
+RC_ICONS = clock.ico
+
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
@@ -77,6 +79,8 @@ RESOURCES += \
     api.qrc \
     api.qrc \
     api.qrc \
+    api.qrc \
+    music.qrc \
     music.qrc \
     music.qrc \
     music.qrc \
@@ -87,6 +91,8 @@ RESOURCES += \
     pics.qrc \
     pics.qrc \
     pics.qrc \
+    pics.qrc \
+    res.qrc \
     res.qrc \
     res.qrc \
     res.qrc \
@@ -98,11 +104,14 @@ DISTFILES += \
     Andrew Prahlow - Echoes of the Eye.mp3 \
     Andrew Prahlow - Echoes of the Eye.mp3 \
     Andrew Prahlow - Echoes of the Eye.mp3 \
+    Andrew Prahlow - Echoes of the Eye.mp3 \
     Andrew Prahlow - Echoes of the Eye.mp3.lnk \
     Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
+    Echoes of Nature - Showers.mp3 \
+    Noble Music Project.mp3 \
     Noble Music Project.mp3 \
     Noble Music Project.mp3 \
     Noble Music Project.mp3 \
@@ -111,6 +120,8 @@ DISTFILES += \
     Peter Jeremias - Coming Home.mp3 \
     Peter Jeremias - Coming Home.mp3 \
     Peter Jeremias - Coming Home.mp3 \
+    Peter Jeremias - Coming Home.mp3 \
+    Peter Jeremias - Dusk.mp3 \
     Peter Jeremias - Dusk.mp3 \
     Peter Jeremias - Dusk.mp3 \
     Peter Jeremias - Dusk.mp3 \
@@ -125,3 +136,5 @@ DISTFILES += \
     untitled.pro.user.33a521e \
     untitled.pro.user.9a5c0e8 \
     untitled.pro.user.b38871d
+
+TARGET = TomatoClock
