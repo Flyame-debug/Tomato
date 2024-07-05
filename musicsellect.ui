@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>593</width>
-    <height>456</height>
+    <width>600</width>
+    <height>450</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>450</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -20,21 +32,29 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>50</y>
-     <width>72</width>
-     <height>15</height>
+     <x>200</x>
+     <y>40</y>
+     <width>200</width>
+     <height>40</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>音乐选择</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>80</y>
+     <y>110</y>
      <width>241</width>
      <height>291</height>
     </rect>
@@ -90,14 +110,27 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>20</y>
-     <width>93</width>
-     <height>28</height>
+     <x>0</x>
+     <y>0</y>
+     <width>80</width>
+     <height>30</height>
     </rect>
    </property>
    <property name="text">
     <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>0</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>主菜单</string>
    </property>
   </widget>
  </widget>
