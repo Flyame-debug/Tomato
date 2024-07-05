@@ -11,7 +11,6 @@ MainMenu::MainMenu(QWidget *parent) :
     ui(new Ui::MainMenu)
 {
     ui->setupUi(this);
-    setWindowFlags(Qt::FramelessWindowHint|windowFlags());
     //setAttribute(Qt::WA_TranslucentBackground);
 }
 
