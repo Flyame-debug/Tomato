@@ -8,6 +8,7 @@
 #include <QSpinBox>
 class MyQSpinBox : public QSpinBox
 {
+     Q_OBJECT
 public:
     MyQSpinBox(QWidget *parent = 0);
 protected:

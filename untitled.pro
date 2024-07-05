@@ -61,8 +61,6 @@ FORMS += \
     running.ui \
     task.ui \
     taskcreate.ui \
-    tasklist.ui \
-    tasklist.ui \
     tomato.ui \
     widget.ui \
     xitongsetting.ui
@@ -77,10 +75,6 @@ RESOURCES += \
     api.qrc \
     api.qrc \
     api.qrc \
-    api.qrc \
-    api.qrc \
-    music.qrc \
-    music.qrc \
     music.qrc \
     music.qrc \
     music.qrc \
@@ -89,42 +83,24 @@ RESOURCES += \
     pics.qrc \
     pics.qrc \
     pics.qrc \
-    pics.qrc \
-    pics.qrc \
-    res.qrc \
-    res.qrc \
     res.qrc \
     res.qrc \
     res.qrc
 
 DISTFILES += \
-    .gitignore \
-    .gitignore \
-    Andrew Prahlow - Echoes of the Eye.mp3 \
-    Andrew Prahlow - Echoes of the Eye.mp3 \
     Andrew Prahlow - Echoes of the Eye.mp3 \
     Andrew Prahlow - Echoes of the Eye.mp3 \
     Andrew Prahlow - Echoes of the Eye.mp3 \
     Andrew Prahlow - Echoes of the Eye.mp3.lnk \
-    Andrew Prahlow - Echoes of the Eye.mp3.lnk \
-    Andrew Prahlow - Echoes of the Eye.mp3.lnk \
-    Echoes of Nature - Showers.mp3 \
-    Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
     Echoes of Nature - Showers.mp3 \
     Noble Music Project.mp3 \
     Noble Music Project.mp3 \
     Noble Music Project.mp3 \
-    Noble Music Project.mp3 \
-    Noble Music Project.mp3 \
     Peter Jeremias - Coming Home.mp3 \
     Peter Jeremias - Coming Home.mp3 \
     Peter Jeremias - Coming Home.mp3 \
-    Peter Jeremias - Coming Home.mp3 \
-    Peter Jeremias - Coming Home.mp3 \
-    Peter Jeremias - Dusk.mp3 \
-    Peter Jeremias - Dusk.mp3 \
     Peter Jeremias - Dusk.mp3 \
     Peter Jeremias - Dusk.mp3 \
     Peter Jeremias - Dusk.mp3 \
